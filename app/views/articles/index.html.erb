@@ -1,0 +1,13 @@
+<h1>articles</h1>
+
+<ul>
+<div class="container-fluid d-flex justify-content-center align-items-center">
+  <div class="row">
+    <div class="col-md-10">
+      <% @articles.each do |article| %>
+      <li> <%= link_to article.title, article_path(article), class: "form-check-label" %> </li>
+      <% end %></ul>
+      <%= link_to "+ Add a new article", new_article_path %>
+    </div>
+  </div>
+</div>
